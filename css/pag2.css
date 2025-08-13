@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d8d5d5;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+.caixa-geral {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    background-color: #E9E3E3; 
+    margin: 0 auto;
+    box-shadow:  0 0 20px rgba(240, 240, 240, 0.8);
+}
+.conversa1{
+    display: flex;
+    flex: 1;
+    flex-direction:row;
+    justify-content: space-around ;
+    margin-top: 100px;
+
+}
+.conversa2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 350px;
+    margin-left: 80px;
+    position: absolute;
+
+}
+
+.quote-box {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            height: 150px;
+            position: relative;
+            box-shadow: 4px 4px 56.4px 0;
+        }
+
+        .quote-box::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -76px;
+            border-top: 68px solid transparent;
+            border-left: 84px solid #f0f0f0;
+            border-bottom: 84px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .quote-box p{
+            width: 220px;
+            margin-top: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+        }
+
+        .Einstein1{
+            width: 130px;
+            height:150px;
+            margin-left: 35px;
+            
+        }
+        .Einstein2{
+            width: 130px;
+            height:150px;
+            position: absolute;
+            margin-top: 50px;
+            left: 2px ;
+            
+       }
+        .quote-box2 {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            height: 150px;
+            position: relative;
+            box-shadow: 4px 4px 50 .4px 0;
+            left:250px;
+            position: absolute;
+            margin-top: 50px;
+        }
+
+        .quote-box2::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left:-76px;
+            border-top: 68px solid transparent;
+            border-right: 84px solid #f0f0f0;
+            border-bottom: 84px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+            
+        }
+
+          .quote-box2 p{
+            width: 220px;
+            margin-top: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+
+        }
+
+
+        .menu{
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 2px;
+            background-color: #CCC9CC;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .item{
+            background-color: #E9E3E3;
+            border: 1px black solid;
+            width: 70px;
+            height: 40px;
+            border-radius: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item2{
+            background-color: #E9E3E3;
+            border: 1px black solid;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 80px;
+            border-radius: 50px 50px 90px 90px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vector1{
+            width: 40px;
+            height: 30px;
+        }
+
+        .vector2{
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width:1120px){
+             .caixa-geral{
+                width: 70%;
+            }
+            .conversa1{
+                display: flex;
+                flex-direction:row;
+                justify-content: space-around;
+                margin-top: 100px;
+            
+            }
+            .conversa2{
+                display: flex;
+                flex-direction:row-reverse;
+                
+            }
+           
+            .quote-box{
+                width: 150px;
+                height: 90px;
+
+
+            }
+        
+          .quote-box::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -48px;
+            border-top: 34px solid transparent;
+            border-left: 50px solid #f0f0f0;
+            border-bottom: 50px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        .quote-box p{
+            width: 120px;
+            letter-spacing: 1.5px;
+            margin-top: 3px;
+            font-size: 11px;
+            color: rgb(0, 0, 0);
+        }
+        .Einstein1{
+            width: 15vw;
+            height:85px;
+            margin-left: 35px;
+            
+        }
+        .Einstein2{
+            width: 15vw;
+            height:85px;
+            position: absolute;
+            margin-top: -100px;
+            left: -70px;
+            
+       }
+        
+        .quote-box2{
+            width: 150px;   
+            height: 90px;
+            left: 90px;
+            position: absolute;
+            margin-top: -100px;
+        }
+    
+        .quote-box2::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left:-48px;
+            border-top: 34px solid transparent;
+            border-right: 50px solid #f0f0f0;
+            border-bottom: 50px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    .quote-box2 p{
+        width: 120px;
+        letter-spacing: 1.5px;
+        margin-top: 0;
+        font-size: 11px;
+        color: rgb(0, 0, 0);
+    }
+
+
+    
+        
+        }
+
+        @media (max-width: 550px) {
+            .caixa-geral{
+                width: 70%;
+            }
+            .conversa1{
+                display: flex;
+                flex-direction:row;
+                justify-content: space-around;
+                margin-top: 100px;
+            
+            }
+            .conversa2{
+                display: flex;
+                flex-direction:row-reverse;
+                
+            }
+           
+            .quote-box{
+                width: 150px;
+                height: 90px;
+
+
+            }
+        
+          .quote-box::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -48px;
+            border-top: 34px solid transparent;
+            border-left: 50px solid #f0f0f0;
+            border-bottom: 50px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        .quote-box p{
+            width: 120px;
+            letter-spacing: 1.5px;
+            margin-top: 3px;
+            font-size: 11px;
+            color: rgb(0, 0, 0);
+        }
+        .Einstein1{
+            width: 15vw;
+            height:85px;
+            margin-left: 35px;
+            
+        }
+        .Einstein2{
+            width: 15vw;
+            height:85px;
+            position: absolute;
+            margin-top: -100px;
+            left: -70px;
+            
+       }
+        
+        .quote-box2{
+            width: 150px;   
+            height: 90px;
+            left: 90px;
+            position: absolute;
+            margin-top: -100px;
+        }
+    
+        .quote-box2::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left:-48px;
+            border-top: 34px solid transparent;
+            border-right: 50px solid #f0f0f0;
+            border-bottom: 50px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    .quote-box2 p{
+        width: 120px;
+        letter-spacing: 1.5px;
+        margin-top: 0;
+        font-size: 11px;
+        color: rgb(0, 0, 0);
+    }
+
+
+    
+        
+            }
+        
+            @media (max-width: 470px) {
+                
+             .caixa-geral {
+            width: 90%;
+            }
+            .quote-box{
+                width: 150px;
+               height: 120px;
+                margin-top: 70px;
+
+            }
+
+            .quote-box::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -62px;
+                border-top: 52px solid transparent;
+                border-left: 68px solid #f0f0f0;
+                border-bottom: 68px solid transparent;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+            .quote-box p{
+                width: 120px;
+                letter-spacing: 1.5px;
+                margin-top: 3px;
+                font-size: 14px;
+                color: rgb(0, 0, 0);
+            }
+            .quote-box2{
+                left: 130px;
+                margin-top: 25px;
+                height: 120px;
+                
+            }
+            .quote-box2::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left:-62px;
+                border-top: 52px solid transparent;
+                border-right: 68px solid #f0f0f0;
+                border-bottom: 68px solid transparent;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+
+            .quote-box2 p{
+                width: 120px;
+                letter-spacing: 1.5px;
+                margin-top: 0;
+                font-size: 14px;
+                color: rgb(0, 0, 0);
+            }
+            .Einstein2{
+             left: -40px;
+                
+           }
+           .Einstein1{
+            width: 30vw;
+            height:150px;
+            margin-left: 35px;
+            margin-top: 50px;
+            
+        }
+        .Einstein2{
+            width: 30vw;
+            height:150px;
+            position: absolute;
+            margin-top: 0px;
+            left: -70px;
+
+            
+       }
+            }
+        
+                @media (max-width: 400px) {
+                    .quote-box{
+                        width: 150px;
+                       height: 120px;
+                        margin-top: 70px;
+        
+                    }
+                    .quote-box2{
+                        width:150px;   
+                        height: 120px;
+                        left: 80px;
+                        position: absolute;
+                        margin-top: 0;
+                    }
+                    .Einstein1{
+                        width: 25vw;
+                        height:150px;
+                        margin-left: 35px;
+                        margin-top: 50px;
+                        
+                    }
+                    .Einstein2{
+                        width: 25vw;
+                        height:150px;
+                        position: absolute;
+                        margin-top: -15px;
+                        left: -70px;
+                        
+                   }
+            
+                    
+            }
+
+           
+            
